@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'articles',
     'bootstrap3',
     'django_markdown',
+    'jquery',
 
 ]
 

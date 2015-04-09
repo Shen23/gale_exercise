@@ -26,7 +26,7 @@
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background: url("/static/img/home.jpg") no-repeat center; 
+  /*background: url("/static/img/home.jpg") no-repeat center; */
 }
     </style>
 
@@ -51,20 +51,17 @@
       <div class="row row-offcanvas row-offcanvas-right">
 
         <div class="col-xs-12 col-sm-9">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
+          {% block toggle_nav %}
+          {% endblock %}
           <div class="jumbotron">
             <h1>Articles</h1>
             <p>CBC News is the division of the Canadian Broadcasting Corporation responsible for the news gathering and production of news programs on CBC Television, Radio and online services. </p>
-
-           <!--  <p>
-            <img src = "{% static 'img/home.jpg' %}" class = "img-responsive" />  
-            </p> -->
-
           </div>
+
+             
           <div class="row">
-    {% block entries %}
+
+        {% block entries %}
         
         {% endblock %}
 
@@ -84,7 +81,7 @@
   <div class="row">
     <h2>Read More</h2>
   </div>
-  {% block read_more %}
+      {% block read_more %}
        
        {% endblock %}
 
