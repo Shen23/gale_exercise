@@ -16,7 +16,6 @@ class Article(models.Model):
 	preview = models.CharField(max_length = 1000)
 	text = models.TextField()
 	publish = models.BooleanField(default = True)
-
 	
 	objects = ArticleQuerySet.as_manager()
 

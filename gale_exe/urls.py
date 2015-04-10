@@ -10,7 +10,7 @@ urlpatterns = patterns(
     #url('^$', views.ArticleListView.as_view(model = Article)),
     '',
     url(r'^admin/', include(admin.site.urls)),
-    #url(r'^markdown/', include('django_markdown.urls')),
+    url(r'^markdown/', include('django_markdown.urls')),
     url(r'^', include('articles.urls')),
 )+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

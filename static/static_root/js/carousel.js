@@ -1,1 +1,6 @@
-/Users/FuJun/Documents/gale_exe/static/static_dirs/js/carousel.js
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
