@@ -94,7 +94,10 @@ DATABASES = {
     }
 }
 
-
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 # Internationalization
 # https://docs.djangoproject.com/en/dev/topics/i18n/
 
