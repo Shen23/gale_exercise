@@ -3,9 +3,16 @@
 
 
 {% block entries %}
-        <h2>{{ article.title }}</h2><p>Author: {{ article.author }}</p>
+        <h2>{{ article.title }}</h2>
+        <p>Author: {{ article.author }}</p>
+        <br>
+  
+        <img src="{{article.image.url" alt = "image" > 
         <p class="meta"></p>
     	{{ article.text|markdown }}
+    	<br>
+
+    	<li><a class="btn btn-default" href="/" role="button"> &laquo; Back </a></li>
  {% endblock %}
 
  {% block read_more %}
@@ -16,40 +23,27 @@
           <div class="item  active">
             <div class="row">
               <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                <a class="thumbnail" href="1"><img alt="" src="http://placehold.it/150x150"></a>                
               </div>          
               <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                <a class="thumbnail" href="2"><img alt="" src="http://placehold.it/150x150"></a>       
               </div>
               <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                <a class="thumbnail" href="3"><img alt="" src="http://placehold.it/150x150"></a>
               </div>        
             </div>
           </div>
           <div class="item">
             <div class="row">
               <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                <a class="thumbnail" href="8"><img alt="" src="http://placehold.it/150x150"></a>
               </div>          
               <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                <a class="thumbnail" href="9"><img alt="" src="http://placehold.it/150x150"></a>
               </div>
               <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                <a class="thumbnail" href="10"><img alt="" src="http://placehold.it/150x150"></a>
               </div>        
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-              </div>          
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-              </div>
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-              </div>      
             </div>
           </div>
         </div>

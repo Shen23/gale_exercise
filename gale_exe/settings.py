@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'bootstrap3',
     'django_markdown',
     'jquery',
+    'javascript_settings',
+
 
 ]
 
@@ -60,29 +62,23 @@ MIDDLEWARE_CLASSES = [
 ROOT_URLCONF = 'gale_exe.urls'
 
 
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'templates/'),
-)
 
-
-
-
-
-# TEMPLATES = [
-#     {
-#         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-#         'DIRS': [],
-#         'APP_DIRS': True,
-#         'OPTIONS': {
-#             'context_processors': [
-#                 'django.template.context_processors.debug',
-#                 'django.template.context_processors.request',
-#                 'django.contrib.auth.context_processors.auth',
-#                 'django.contrib.messages.context_processors.messages',
-#             ],
-#         },
-#     },
-# ]
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates/'),],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+                'django.core.context_processors.media',
+            ],
+        },
+    },
+]
 
 
 

@@ -16,7 +16,6 @@ class Article(models.Model):
 	preview = models.CharField(max_length = 1000)
 	text = models.TextField()
 	publish = models.BooleanField(default = True)
-	slug = models.SlugField(max_length=200, unique=True)
 	objects = ArticleQuerySet.as_manager()
 
 	def get_absolute_url(self):
