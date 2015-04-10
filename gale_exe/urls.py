@@ -8,7 +8,7 @@ urlpatterns = [
 #url('^$', 'articles.views.home', name = 'home'),
     #url('^$', views.ArticleListView.as_view(model = Article)),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^markdown/', include('django_markdown.urls')),
+    #url(r'^markdown/', include('django_markdown.urls')),
     url(r'^', include('articles.urls')),
 ]
     # Examples:
